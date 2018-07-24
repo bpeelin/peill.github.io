@@ -1,0 +1,14 @@
+title 0.5 uusi muistiinpano
+
+käyttäjä->selain: 
+note right of käyttäjä: käyttäjä kirjoittaa osoiteriville fullstack-exampleapp.herkuapp.com/spa
+selain->palvelin: GET fullstack-exampleapp.herokuapp.com/spa
+note left of palvelin 
+muodostetaan HTML, missä olemassaolvien muistiinpanojen lukumäärä päivitettynä
+end note 
+palvelin->selain: status 200, sivun HTML-koodi
+selain-> palvelin: GET fullstack-exampleapp.herokuapp.com/taulukko.jpg
+palvelin-> selain: status 200, taulukko
+note left of selain 
+selain näyttää palvelimen palauttaman HTML:n johon on upotettu palvelimelta haettu taulukon kuva
+end note 
