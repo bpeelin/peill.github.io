@@ -1,0 +1,13 @@
+title 0.4 uusi muistiinpano
+
+käyttäjä->selain: 
+note right of käyttäjä: käyttäjä syöttää tekstiä kenttään ja painaa tallennus
+selain->palvelin: GET fullstack-exampleapp.herokuapp.com/notes
+note left of palvelin 
+muodostetaan HTML, missä uusi muistiinpano listattu
+end note over 
+palvelin->selain: status 200, sivun HTML-koodi
+
+note left of selain 
+selain näyttää palvelimen palauttaman HTML:n johon on muistiinpanoja 
+lueteltu palvelimelta 
